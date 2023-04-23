@@ -31,10 +31,11 @@ if(check_request_method('POST')){
     }elseif(max_len($password,30)){
         $errors['password'] = 'password must be smaller than or equal 30 characters';
     }
-
-    $data = login($conn,$email,$password);
-    if(!$data){
-        $errors['wrong'] = 'wrong user info';
+    if(empty($errors)){
+        $data = login($conn,$email,$password);
+        if(!$data){
+            $errors['wrong'] = 'wrong user info';
+        }
     }
 
     if(empty($errors)){
