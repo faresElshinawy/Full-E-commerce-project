@@ -57,7 +57,7 @@ if(isset($_GET['id'])):
                         ?>
                             <tr>
                                 <td><?= $row['pro_name'] ?></td>
-                                <td><?= $row['price'] ?></td>
+                                <td>$<?= $row['price'] ?></td>
                             </tr>
                         <?php
                                 endwhile;
