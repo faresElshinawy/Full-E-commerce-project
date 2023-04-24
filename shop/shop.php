@@ -49,7 +49,7 @@
                             $result = get_products_max($conn);
                             }elseif(isset($_GET['price']) && $_GET['price'] == 'min'){
                                 $result = get_products_min($conn);
-                            }elseif(isset($_GET['price']) && $_GET['price'] != 'min' && $_GET['price'] != 'min'){
+                            }elseif(isset($_GET['price']) && $_GET['price'] != 'min' && $_GET['price'] != 'max'){
                                 $result = get_products($conn);
                             }elseif(isset($_GET['date']) && $_GET['date'] == 'latest'){
                                 $result = get_products_latest($conn);

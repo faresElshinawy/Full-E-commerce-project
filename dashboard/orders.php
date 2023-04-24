@@ -95,7 +95,7 @@ unset($_SESSION['errors']);
                         <td>status</td>
                         <td>created at</td>
                         <td>products count</td>
-                        <td>created at</td>
+                        <td>total price</td>
                         <td>control</td>
                 </tr>
                 </tfoot>
