@@ -35,7 +35,6 @@ unset($_SESSION['success']);
                         <th>id</th>
                         <th>name</th>
                         <th>email</th>
-                        <th>password</th>
                         <th>address</th>
                         <th>phone</th>
                         <th>image</th>
@@ -49,7 +48,6 @@ unset($_SESSION['success']);
                         <td>id</td>
                         <td>name</td>
                         <td>email</td>
-                        <td>password</td>
                         <td>address</td>
                         <td>phone</td>
                         <td>image</td>
@@ -68,7 +66,6 @@ unset($_SESSION['success']);
                         <td><?= $row['user_id'] ?></td>
                         <td><?= $row['first_name'] . ' ' . $row['last_name'] ?></td>
                         <td><?= $row['email'] ?></td>
-                        <td><?= $row['password'] ?></td>
                         <td><?= $row['address'] ?></td>
                         <td><?= $row['phone'] ?></td>
                         <td>
